@@ -28,5 +28,19 @@ $nhaykep = "Đây là chữ A: \x41"; # màu của \x41 ở dòng này, rõ ràn
 echo "Nháy đơn: "; var_dump($nhaydon); echo "\n";
 echo "Nháy kép: "; var_dump($nhaykep); echo "\n";
 
+echo "bắt đầu test escap: \n"
+
+# dùng nháy đôi
+$name = "a'aa"
+
+#dùng nháy `
+$name=`a'aa`
+var_dump($name)
+
+# dùng backslash
+$name='a\'aa'
+var_dump($name)
+
+
 ?>
 </pre>
